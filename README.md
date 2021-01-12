@@ -32,7 +32,7 @@ Key Files:
   * public: Contains the HTML/CSS/JS front-end web application for immersiveair.co.uk.
   * schemas: Contains the Mongoose Schema for the MongoDB Atlas database.
   * mongo.js: Responsible for connecting to the MongoDB Atlas database.
-  * server.js: The core Node.js webserver. Responsible for communicating over WebSockets to all 3 actuation platforms (web app, Alexa, Unity VR), aswell as communicating to the OpenWeatherMap API and MongoDB Atlas database. 
+  * server.js: The core Node.js webserver. Responsible for communicating over WebSockets to the sensing unit, web application, and VR system, aswell as communicating to the OpenWeatherMap API, MongoDB Atlas database, and Amazon cloud.
 
  ### SocketClient
  Key Files:
