@@ -10,11 +10,13 @@
 
 [Check out the Immersive Air Web Application](https://www.immersiveair.co.uk/)
 
+Contact: mm1716@ic.ac.uk
+
 <br />
 <br />
 <br />
 
-**The 4 code folders will be explained below.**
+**The 4 code folders are explained below.**
 
 <br />
 <br />
