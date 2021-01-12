@@ -14,6 +14,7 @@
 <br />
 
 **The 4 code folders will be explained below.**
+
 <br />
 <br />
 
@@ -38,9 +39,11 @@ Key Files:
   * SocketClient.ino: The ESP8226 NodeMCU file, responsible for received the JSON sensor data from the Arduino Mega and sending it over WebSockets to the Node.js webserver deployed via Heroku. Coded in Lua.
   
 <br />
+<br />
 
-# Additional comments are made below.
+**Additional comments are made below.**
 
+<br />
 <br />
 
  ## Data Repository
