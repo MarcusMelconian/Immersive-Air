@@ -16,7 +16,7 @@ Contact: mm1716@ic.ac.uk
 
 <br />
 
-## Code folders
+## Code Folders
 
 ### Alexa
 Key Files:
@@ -27,7 +27,7 @@ Key Files:
  Key Files:
   * ArduinoControl.ino: The Arduino Mega 2560 file, responsible for sampling the PM2.5, CCS811, and SHT31-D sensors, and transmitting the data as JSON to the NodeMCU module. Code written in Arduino C/C++.
 
- ## ImmersiveAir-Server
+ ### ImmersiveAir-Server
  Key Files:
   * public: Contains the HTML/CSS/JS front-end web application for immersiveair.co.uk.
   * schemas: Contains the Mongoose Schema for the MongoDB Atlas database.
@@ -40,7 +40,7 @@ Key Files:
   
 <br />
 
-## Additional comments
+## Additional Comments
 
  ### Data Repository
  As the data repo was made with MongoDB Atlas a publicly sharable link is not available. An invite has been sent to HH to view the repo. If any further users would like to be added please write @ my contact.
