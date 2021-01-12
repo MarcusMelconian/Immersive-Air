@@ -12,8 +12,8 @@
 
 
 The 4 code folders will be explained below.
-&nbsp;
-&nbsp;
+<br />
+<br />
 
 ## Alexa
 Key Files:
