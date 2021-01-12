@@ -16,19 +16,17 @@ Contact: mm1716@ic.ac.uk
 
 <br />
 <br />
+
+## Code folders
+
 <br />
 
-**The 4 code folders are detailed below.**
-
-<br />
-<br />
-
-## Alexa
+### Alexa
 Key Files:
  * Alexa.zip: The zip file for the AWS Lambda developer console. This must be linked as an endpoint to the Alexa Skills Kit Immersive Air skill. For questions on this pipelining process please write @ my contact.
  * index.js: The AWS Lambda function written in Node.js.
 
- ## Arduino Control
+ ### Arduino Control
  Key Files:
   * ArduinoControl.ino: The Arduino Mega 2560 file, responsible for sampling the PM2.5, CCS811, and SHT31-D sensors, and transmitting the data as JSON to the NodeMCU module. Code written in Arduino C/C++.
 
@@ -39,21 +37,19 @@ Key Files:
   * mongo.js: Responsible for connecting to the MongoDB Atlas database.
   * server.js: The core Node.js webserver. Responsible for communicating over WebSockets to all 3 actuation platforms (web app, Alexa, Unity VR), aswell as communicating to the OpenWeatherMap API and MongoDB Atlas database. 
 
- ## SocketClient
+ ### SocketClient
  Key Files:
   * SocketClient.ino: The ESP8226 NodeMCU file, responsible for receiving the JSON sensor data from the Arduino Mega and sending it over WebSockets to the Node.js webserver deployed via Heroku. Coded in Lua.
   
 <br />
 <br />
+
+## Additional comments
+
 <br />
 
-**Additional comments are detailed below.**
-
-<br />
-<br />
-
- ## Data Repository
+ ### Data Repository
  As the data repo was made with MongoDB Atlas a publicly sharable link is not available. An invite has been sent to HH to view the repo. If any further users would like to be added please write @ my contact.
 
- ## Immersive Air VR Experience
+ ### Immersive Air VR Experience
  The project folder can't be pushed to Github due to its size. The folder is stored via the Box cloud service. If you would like to be added to the Unity project Box folder please write @ my contact.
