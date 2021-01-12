@@ -16,9 +16,11 @@ Contact: mm1716@ic.ac.uk
 
 <br />
 <br />
+<br />
 
 **The 4 code folders are explained below.**
 
+<br />
 <br />
 
 ## Alexa
@@ -43,9 +45,11 @@ Key Files:
   
 <br />
 <br />
+<br />
 
 **Additional comments are made below.**
 
+<br />
 <br />
 
  ## Data Repository
