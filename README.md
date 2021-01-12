@@ -1,6 +1,5 @@
 ![Immersive Air Logo](Thumbnail.png)
 
-<pre>
 # Immersive Air
 
 ## Educating Air Pollution through Immersive IoT
@@ -15,6 +14,14 @@
 The 4 code folders will be explained below.
 
 
+
+
+
+
+
+
+
+
 ## Alexa
 Key Files:
  * Alexa.zip: The zip file for the AWS Lambda developer console. This must be linked as an endpoint to the Alexa Skills Kit Immersive Air skill. For questions on this pipelining process please write @ my contact.
@@ -22,5 +29,5 @@ Key Files:
  
  ## Arduino Control
  Key Files:
-</pre>  
+
 
