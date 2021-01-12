@@ -1,5 +1,6 @@
 ![Immersive Air Logo](Thumbnail.png)
 
+<pre>
 # Immersive Air
 
 ## Educating Air Pollution through Immersive IoT
@@ -12,7 +13,7 @@
 
 
 The 4 code folders will be explained below.
-__
+
 
 ## Alexa
 Key Files:
@@ -21,5 +22,5 @@ Key Files:
  
  ## Arduino Control
  Key Files:
-  
+</pre>  
 
