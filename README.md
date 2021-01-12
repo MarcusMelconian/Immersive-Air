@@ -12,6 +12,7 @@
 
 <br />
 <br />
+
 The 4 code folders will be explained below.
 
 <br />
@@ -24,12 +25,14 @@ Key Files:
  
 <br />
 <br />
+
  ## Arduino Control
  Key Files:
   * ArduinoControl.ino: The Arduino Mega 2560 file, responsible for sampling the PM2.5, CCS811, and SHT31-D sensors, and transmitting the data as JSON to the NodeMCU module. Code written in Arduino C/C++.
   
 <br />
 <br />
+
  ## ImmersiveAir-Server
  Key Files:
   * public: Contains the HTML/CSS/JS front-end web application for immersiveair.co.uk.
@@ -39,21 +42,25 @@ Key Files:
   
 <br />
 <br />
+
  ## SocketClient
  Key Files:
   * SocketClient.ino: The ESP8226 NodeMCU file, responsible for received the JSON sensor data from the Arduino Mega and sending it over WebSockets to the Node.js webserver deployed via Heroku. Coded in Lua.
   
 <br />
 <br />
+
 Additional comments are made below.
 
 <br />
 <br />
+
  ## Data Repository
  As the data repo was made with MongoDB Atlas a publicly sharable link is not available. An invite has been sent to HH to view the repo. If any other users would like to be added please write @ my contact.
  
 <br />
 <br />
+
  ## Immersive Air VR Experience
  The project folder can not be pushed to Github due to its size. The folder is stored via the Box cloud service. If you would like to be added to via the Unity project please write @ my contact.
 
