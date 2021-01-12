@@ -20,7 +20,6 @@ The 4 code folders will be explained below.
 Key Files:
  * Alexa.zip: The zip file for the AWS Lambda developer console. This must be linked as an endpoint to the Alexa Skills Kit Immersive Air skill. For questions on this pipelining process please write @ my contact.
  * index.js: The AWS Lambda function written in Node.js.
- 
 <br />
 
  ## Arduino Control
