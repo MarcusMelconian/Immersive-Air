@@ -2,7 +2,9 @@
 
 # Immersive Air
 
-## Educating Air Pollution through Immersive IoT
+### Educating Air Pollution through Immersive IoT
+
+<br />
 
 [Check out the VR IoT Demo](https://youtu.be/8soYK2LeLBY)
 
@@ -14,7 +16,6 @@
 <br />
 
 **The 4 code folders will be explained below.**
-
 <br />
 <br />
 
@@ -42,7 +43,6 @@ Key Files:
 <br />
 
 **Additional comments are made below.**
-
 <br />
 <br />
 
