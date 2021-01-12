@@ -15,11 +15,8 @@
 Contact: mm1716@ic.ac.uk
 
 <br />
-<br />
 
 ## Code folders
-
-<br />
 
 ### Alexa
 Key Files:
@@ -42,11 +39,8 @@ Key Files:
   * SocketClient.ino: The ESP8226 NodeMCU file, responsible for receiving the JSON sensor data from the Arduino Mega and sending it over WebSockets to the Node.js webserver deployed via Heroku. Coded in Lua.
   
 <br />
-<br />
 
 ## Additional comments
-
-<br />
 
  ### Data Repository
  As the data repo was made with MongoDB Atlas a publicly sharable link is not available. An invite has been sent to HH to view the repo. If any further users would like to be added please write @ my contact.
