@@ -54,8 +54,6 @@ Key Files:
 
  ## Data Repository
  As the data repo was made with MongoDB Atlas a publicly sharable link is not available. An invite has been sent to HH to view the repo. If any further users would like to be added please write @ my contact.
- 
-<br />
 
  ## Immersive Air VR Experience
- The project folder can't be pushed to Github due to its size. The folder is stored via the Box cloud service. If you would like to be added to the Unity project please write @ my contact.
+ The project folder can't be pushed to Github due to its size. The folder is stored via the Box cloud service. If you would like to be added to the Unity project Box folder please write @ my contact.
