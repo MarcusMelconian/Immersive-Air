@@ -12,7 +12,7 @@
 
 <br />
 
-# The 4 code folders will be explained below.
+**The 4 code folders will be explained below.**
 
 <br />
 
@@ -20,14 +20,10 @@
 Key Files:
  * Alexa.zip: The zip file for the AWS Lambda developer console. This must be linked as an endpoint to the Alexa Skills Kit Immersive Air skill. For questions on this pipelining process please write @ my contact.
  * index.js: The AWS Lambda function written in Node.js.
- 
-<br />
 
  ## Arduino Control
  Key Files:
   * ArduinoControl.ino: The Arduino Mega 2560 file, responsible for sampling the PM2.5, CCS811, and SHT31-D sensors, and transmitting the data as JSON to the NodeMCU module. Code written in Arduino C/C++.
-  
-<br />
 
  ## ImmersiveAir-Server
  Key Files:
@@ -35,8 +31,6 @@ Key Files:
   * schemas: Contains the Mongoose Schema for MongoDB Atlas database.
   * mongo.js: Responsible for connecting to the MongoDB Atlas database.
   * server.js: The core Node.js webserver. Responsible for communicating over WebSockets to all 3 actuation platforms (web app, Alexa, Unity VR), aswell as talking to the OpenWeatherMap API and MongoDB Atlas database. 
-  
-<br />
 
  ## SocketClient
  Key Files:
