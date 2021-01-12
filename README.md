@@ -1,7 +1,6 @@
 ![Immersive Air Logo](Thumbnail.png)
-Format: ![Alt Text](url)
 
-# Immersive-Air
+# Immersive Air
 
 ## Educating Air Pollution through Immersive IoT
 
@@ -13,7 +12,7 @@ Format: ![Alt Text](url)
 
 
 The 4 code folders will be explained below.
-
+__
 
 ## Alexa
 Key Files:
