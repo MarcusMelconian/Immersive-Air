@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+
+
+    WELCOME TO IMMERSIVEAIR.CO.UK
+
+    Educating Air Pollution through Immersive IoT
+
+    ........
+
+
+    Enjoy the source code :D
+
+    
+    
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Immersive Air - Home</title>
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="icon" type="image/png" href="./images/IALogo2.png"/>
+</head>
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<div class="header">
+    <div class="title_container">
+        <h1>Immersive <span>Air</span></h1>
+    </div>
+    <a href="index.html">
+        <img src="./images/IALogo.png">
+    </a>
+    <div class="navigation">
+        <h1><a href="index.html">HOME</a></h1>
+        <h1><a href="correlation.html">CORRELATION</a></h1>
+        <h1><a href="vr.html">VR</a></h1>
+    </div>
+</div>
+
+<body>
+    <div class="chart-container">
+        <div class="loader-wrapper2" id="chart-wrapper1">
+            <span class="loader2"><span class="loader-inner"></span></span>
+        </div>
+        <div class="chart-innercontainer">
+            <canvas id="chart1"></canvas>
+        </div>
+    </div>
+    <div class="data-points-container">
+        <button onClick="dataChange()" class="apply-button">Apply</button>
+        <input onKeyDown="keyChecker()" class="data-points" id="points_val" type="number" step="1" min="5" max="200" />
+        <button onClick="timescaleChange()" class="timescale-button" id="8640">Days</button>
+        <button onClick="timescaleChange()" class="timescale-button" id="360">Hours</button>
+        <button onClick="timescaleChange()" class="timescale-button" id="6">Minutes</button>
+        <button onClick="timescaleChange()" class="timescale-button" id="1">Seconds</button>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="chart-container">
+        <div class="loader-wrapper2" id="chart-wrapper2">
+            <span class="loader2"><span class="loader-inner"></span></span>
+        </div>
+        <div class="chart-innercontainer">
+            <canvas id="chart2"></canvas>
+        </div>
+    </div>
+    <div class="data-points-container">
+        <button onClick="dataChange2()" class="apply-button">Apply</button>
+        <input onKeyDown="keyChecker()" class="data-points" id="points_val2" type="number" step="1" min="5" max="200" />
+        <button onClick="timescaleChange2()" class="timescale-button" id="8640">Days</button>
+        <button onClick="timescaleChange2()" class="timescale-button" id="360">Hours</button>
+        <button onClick="timescaleChange2()" class="timescale-button" id="6">Minutes</button>
+        <button onClick="timescaleChange2()" class="timescale-button" id="1">Seconds</button>
+    </div>  
+
+    <div class="line"></div>
+
+    <div class="chart-container">
+        <div class="loader-wrapper2" id="chart-wrapper3">
+            <span class="loader2"><span class="loader-inner"></span></span>
+        </div>
+        <div class="chart-innercontainer">
+            <canvas id="chart3"></canvas>
+        </div>
+    </div>
+    <div class="data-points-container">
+        <button onClick="dataChange3()" class="apply-button">Apply</button>
+        <input onKeyDown="keyChecker()" class="data-points" id="points_val3" type="number" step="1" min="5" max="200" />
+        <button onClick="timescaleChange3()" class="timescale-button" id="8640">Days</button>
+        <button onClick="timescaleChange3()" class="timescale-button" id="360">Hours</button>
+        <button onClick="timescaleChange3()" class="timescale-button" id="6">Minutes</button>
+        <button onClick="timescaleChange3()" class="timescale-button" id="1">Seconds</button>
+    </div>  
+
+    <div class="line"></div>
+
+    <div class="chart-container">
+        <div class="loader-wrapper2" id="chart-wrapper4">
+            <span class="loader2"><span class="loader-inner"></span></span>
+        </div>
+        <div class="chart-innercontainer">
+            <canvas id="chart4"></canvas>
+        </div>
+    </div>
+    <div class="data-points-container">
+        <button onClick="dataChange4()" class="apply-button">Apply</button>
+        <input onKeyDown="keyChecker()" class="data-points" id="points_val4" type="number" step="1" min="5" max="200" />
+        <button onClick="timescaleChange4()" class="timescale-button" id="8640">Days</button>
+        <button onClick="timescaleChange4()" class="timescale-button" id="360">Hours</button>
+        <button onClick="timescaleChange4()" class="timescale-button" id="6">Minutes</button>
+        <button onClick="timescaleChange4()" class="timescale-button" id="1">Seconds</button>
+    </div>  
+
+    <div class="line"></div>
+
+    <div class="chart-container">
+        <div class="loader-wrapper2" id="chart-wrapper5">
+            <span class="loader2"><span class="loader-inner"></span></span>
+        </div>
+        <div class="chart-innercontainer">
+            <canvas id="chart5"></canvas>
+        </div>
+    </div>
+    <div class="data-points-container">
+        <button onClick="dataChange5()" class="apply-button">Apply</button>
+        <input onKeyDown="keyChecker()" class="data-points" id="points_val5" type="number" step="1" min="5" max="200" />
+        <button onClick="timescaleChange5()" class="timescale-button" id="8640">Days</button>
+        <button onClick="timescaleChange5()" class="timescale-button" id="360">Hours</button>
+        <button onClick="timescaleChange5()" class="timescale-button" id="6">Minutes</button>
+        <button onClick="timescaleChange5()" class="timescale-button" id="1">Seconds</button>
+    </div>  
+
+    <div class="line-bottom"></div>
+</body>
+
+<div class="footer">
+    <div class="footertitle_container">
+        <h1>Educating Air Pollution through Immersive IoT</h1>
+    </div>
+    <div class="links-container">
+        <a class="links" target="_blank" rel="noopener noreferrer" href="https://github.com/MarcusMelconian">
+            <img src="./images/G.png">
+        </a>
+    </div>
+</div>
+
+<script defer src="https://immersiveair-server.herokuapp.com/socket.io/socket.io.js"></script>
+<script src="charts.js"></script>
+<script defer src="script.js"></script>
+<script>
+
+    $('body').addClass('stop-scrolling')
+
+    $(window).on("load",function(){
+        startupData(dataPoints);
+    });
+
+    $(".loader-wrapper2").fadeOut(0.1);
+
+    var mq = window.matchMedia( "(max-width: 570px)" );
+    var dataPoints;
+    if (mq.matches) {
+    // window width is at less than 570px
+        dataPoints = 6;
+        document.getElementById('points_val').value = '6';
+        document.getElementById('points_val2').value = '6';
+        document.getElementById('points_val3').value = '6';
+        document.getElementById('points_val4').value = '6';
+        document.getElementById('points_val5').value = '6';
+    }
+    else {
+    // window width is greater than 570px
+        dataPoints = 20;
+        document.getElementById('points_val').value = '20';
+        document.getElementById('points_val2').value = '20';
+        document.getElementById('points_val3').value = '20';
+        document.getElementById('points_val4').value = '20';
+        document.getElementById('points_val5').value = '20';
+    }
+
+    function keyChecker() {
+        if(event.key === 'Enter') {
+            if (event.srcElement.id == 'points_val') { dataChange(); }
+            else if (event.srcElement.id == 'points_val2') { dataChange2(); } 
+            else if (event.srcElement.id == 'points_val3') { dataChange3(); }   
+            else if (event.srcElement.id == 'points_val4') { dataChange4(); }  
+            else if (event.srcElement.id == 'points_val5') { dataChange5(); } 
+        }
+    }
+
+</script>
+</html>

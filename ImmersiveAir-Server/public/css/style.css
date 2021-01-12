@@ -1,0 +1,375 @@
+.stop-scrolling {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    top: 0;
+    height: 10rem;
+    position: relative;
+    background-color: black;
+}
+
+.title_container{
+    height: 100%;
+    float: left;
+    display: table;
+}
+
+.title_container h1{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+    color: rgb(184, 14, 226);
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.title_container h1 span{
+    color: white;
+    font-weight: 300;
+}
+
+.header img {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.navigation{
+    height: 100%;
+    float: right;
+    display: table;
+}
+
+.navigation h1{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 30px;
+}
+
+.navigation a{
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.navigation a:hover{
+    color: rgb(184, 14, 226);
+}
+
+
+/* DASH */
+
+.chart-container{
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.chart-innercontainer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+}
+
+.data-points-container{
+    margin: 10px auto;
+    width: 80%;
+}
+
+.data-points{
+    float: right;
+    margin-right: 5px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+}
+
+.apply-button{
+    float:right;
+    margin-right: 10px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+}
+
+.apply-button:hover{
+    color: rgb(184, 14, 226);
+    cursor: pointer;
+}
+
+.timescale-button{
+    float:left;
+    margin-left: 10px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+}
+
+.timescale-button:hover{
+    color: rgb(184, 14, 226);
+    cursor: pointer;
+}
+
+.line{
+    width: 60%;
+    height: 105px;
+    border-bottom: 2px solid #f8f5f5;
+    margin-left: 20%;
+}
+
+.line-bottom{
+    width: 60%;
+    height: 105px;
+    border-bottom: 2px solid #f8f5f5;
+    margin-left: 20%;
+    margin-bottom: 82px;
+}
+
+
+/* CORRELATION */
+.droplist{
+    float: left;
+    margin-left: 40px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+}
+
+.droplist option:hover {
+    background-color: rgb(184, 14, 226);
+}
+
+
+/* VR */
+.video-wrap {
+    margin: 100px auto;
+    max-width: 75%;
+}
+
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    top: 0;
+    height: 6rem;
+    position: relative;
+    background-color: black;
+}
+
+.footertitle_container{
+    height: 100%;
+    float: left;
+    display: table;
+}
+
+.footertitle_container h1{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.links-container{
+    height: 100%;
+    float: right;
+    display: table;
+}
+
+.links{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 30px;
+    height: 70%;
+    
+}
+
+.links img{
+    height: 10%;
+}
+
+
+/* LOADER */
+    
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.loader-wrapper2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    visibility: hidden;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid white;
+    animation: loader 2s infinite ease;
+}
+
+.loader2 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid rgb(153, 153, 153);
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(184, 14, 226);
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader2 {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+
+
+/* MEDIA QUERIES */
+
+/* DASH */
+
+@media screen and (max-width:1000px){
+    .title_container{
+        display: none;
+    }
+    .header img {
+        height: 70%;
+        left: 3.5%;
+        margin-right: -96.5%;
+        transform: translate(0%, -50%);
+    }
+}
+
+@media screen and (max-width:800px){
+    .navigation a{
+        font-size: 19px;
+    }
+    .footertitle_container h1{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:575px){
+    .header img {
+        height: 50%;
+    }
+    .footertitle_container h1{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .header img {
+        height: 40%;
+    }
+    .navigation a{
+        font-size: 16px;
+    }
+    .footertitle_container h1{
+        font-size: 12px;
+    }
+    .links img{
+        height: 8%;
+    }
+    
+}
+
+@media screen and (max-width:410px){
+    .navigation h1{
+        padding-right: 20px;
+    }
+    .footertitle_container h1{
+        font-size: 10px;
+    }  
+}
+
+@media screen and (max-width:380px){
+    .header img {
+        height: 35%;
+    }
+    .links img{
+        height: 7%;
+    }
+}
+
+@media screen and (max-width:340px){
+    .header img {
+        height: 30%;
+    }
+    .links img{
+        height: 6%;
+    }
+}
+
+

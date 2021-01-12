@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+
+
+    WELCOME TO IMMERSIVEAIR.CO.UK
+
+    Educating Air Pollution through Immersive IoT
+
+    ........
+
+
+    Enjoy the source code :D
+
+    
+    
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Immersive Air - Correlation</title>
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="icon" type="image/png" href="./images/IALogo2.png"/>
+</head>
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<div class="header">
+    <div class="title_container">
+        <h1>Immersive <span>Air</span></h1>
+    </div>
+    <a href="index.html">
+        <img src="./images/IALogo.png">
+    </a>
+    <div class="navigation">
+        <h1><a href="index.html">HOME</a></h1>
+        <h1><a href="correlation.html">CORRELATION</a></h1>
+        <h1><a href="vr.html">VR</a></h1>
+    </div>
+</div>
+
+<body>
+    <div class="chart-container">
+        <div class="loader-wrapper2" id="chart-wrapper6">
+            <span class="loader2"><span class="loader-inner"></span></span>
+        </div>
+        <div class="chart-innercontainer">
+            <canvas id="chart6"></canvas>
+        </div>
+    </div>
+    <div class="data-points-container">
+        <button onClick="dataChange6()" class="apply-button">Apply</button>
+        <input onKeyDown="keyChecker()" class="data-points" id="points_val6" type="number" step="1" min="5" max="200" />
+        <button onClick="timescaleChange6()" class="timescale-button" id="8640">1 Day</button>
+        <button onClick="timescaleChange6()" class="timescale-button" id="360">1 Hour</button>
+        <select class="droplist" name="sensor-streams" id="streams" onchange="correlation()">
+            <option value="particle1">> 0.3um</option>
+            <option value="particle2">> 0.5um</option>
+            <option value="particle3">> 1.0um</option>
+            <option value="particle4">> 2.5um</option>
+            <option value="particle5">> 5.0um</option>
+            <option value="particle6">> 10um</option>
+            <option value="co2">eCO2</option>
+            <option value="tvoc">TVOC</option>
+            <option value="temp">Room Temp</option>
+            <option value="templocal">Local Temp</option>
+            <option value="humid">Room Humidity</option>
+            <option value="humidlocal">Local Humidity</option>
+        </select>
+    </div>
+
+    <div class="line-bottom"></div>
+</body>
+
+<div class="footer">
+    <div class="footertitle_container">
+        <h1>Educating Air Pollution through Immersive IoT</h1>
+    </div>
+    <div class="links-container">
+        <a class="links" target="_blank" rel="noopener noreferrer" href="https://github.com/MarcusMelconian">
+            <img src="./images/G.png">
+        </a>
+    </div>
+</div>
+
+<script defer src="https://immersiveair-server.herokuapp.com/socket.io/socket.io.js"></script>
+<script src="charts-correlation.js"></script>
+<script defer src="script.js"></script>
+<script>
+
+    $('body').addClass('stop-scrolling')
+
+    $(window).on("load",function(){
+        requestCorrelationData(dataPoints, 360, 'particle1', true);
+    });
+
+    $(".loader-wrapper2").fadeOut(0.1);
+
+    var mq = window.matchMedia( "(max-width: 570px)" );
+    var dataPoints;
+    if (mq.matches) {
+    // window width is at less than 570px
+        dataPoints = 6;
+        document.getElementById('points_val6').value = '6';
+    }
+    else {
+    // window width is greater than 570px
+        dataPoints = 20;
+        document.getElementById('points_val6').value = '20';
+    }
+
+    function keyChecker() {
+        if(event.key === 'Enter') {
+            dataChange6();
+        }
+    }
+
+    function correlation() {
+        dataChange6();
+    }
+
+</script>
+</html>

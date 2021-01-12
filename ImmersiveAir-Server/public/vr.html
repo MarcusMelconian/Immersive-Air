@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+
+
+    WELCOME TO IMMERSIVEAIR.CO.UK
+
+    Educating Air Pollution through Immersive IoT
+
+    ........
+
+
+    Enjoy the source code :D
+
+    
+    
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Immersive Air - VR</title>
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="icon" type="image/png" href="./images/IALogo2.png"/>
+</head>
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<div class="header">
+    <div class="title_container">
+        <h1>Immersive <span>Air</span></h1>
+    </div>
+    <a href="index.html">
+        <img src="./images/IALogo.png">
+    </a>
+    <div class="navigation">
+        <h1><a href="index.html">HOME</a></h1>
+        <h1><a href="correlation.html">CORRELATION</a></h1>
+        <h1><a href="vr.html">VR</a></h1>
+    </div>
+</div>
+
+<body>
+
+    <div class="video-wrap">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8soYK2LeLBY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+</body>
+
+<div class="footer">
+    <div class="footertitle_container">
+        <h1>Educating Air Pollution through Immersive IoT</h1>
+    </div>
+    <div class="links-container">
+        <a class="links" target="_blank" rel="noopener noreferrer" href="https://github.com/MarcusMelconian">
+            <img src="./images/G.png">
+        </a>
+    </div>
+</div>
+
+<script defer src="http://immersiveair-server.herokuapp.com/socket.io/socket.io.js"></script>
+<script src="charts.js"></script>
+<script defer src="script.js"></script>
+<script>
+
+    $('body').addClass('stop-scrolling')
+
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut(1000);
+        $('body').removeClass('stop-scrolling')
+    });
+
+</script>
+</html>
