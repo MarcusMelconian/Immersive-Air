@@ -18,7 +18,7 @@ Contact: mm1716@ic.ac.uk
 <br />
 <br />
 
-**The 4 code folders are explained below.**
+**The 4 code folders are detailed below.**
 
 <br />
 <br />
@@ -47,7 +47,7 @@ Key Files:
 <br />
 <br />
 
-**Additional comments are made below.**
+**Additional comments are detailed below.**
 
 <br />
 <br />
