@@ -46,4 +46,4 @@ Key Files:
  As the data repo was made with MongoDB Atlas a publicly sharable link is not available. An invite has been sent to HH to view the repo. If any further users would like to be added please write @ my contact.
 
  ### Immersive Air VR Experience
- The project folder can't be pushed to Github due to its size. Therefore, the folder is stored via the Box cloud service. An invite has been sent to HH to view the repo. If any further users would like to be added please write @ my contact.
+ The project folder can't be pushed to Github due to its size. Therefore, the folder is stored via the Box cloud service. An invite has been sent to HH to view the Box folder. If any further users would like to be added please write @ my contact.
